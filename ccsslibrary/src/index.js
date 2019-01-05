@@ -8,7 +8,10 @@ import history from './history'
 import {Router, Switch, Route} from 'react-router-dom'
 import { PersistGate } from 'redux-persist/lib/integration/react'
 import Filter from './components/Filter'
+import HomePage from './components/HomePage'
+import Footer from './components/Footer'
 import BaseLayout from './components/BaseLayout'
+//import Header from './components/Header'
 import {persistor, store} from './store/configureStore'
 
 
@@ -19,7 +22,7 @@ ReactDOM.render(<Provider store = {store}>
   <BaseLayout >
 
     <Switch>
-      <Route exact path="/" component={Filter} />
+      <Route exact path="/" component={HomePage} />
 
     </Switch>
 

@@ -1,0 +1,64 @@
+.masthead{
+  margin-left:18%;
+  margin-right: 0px !important;
+  height: 200px;
+  width:83% !important;
+  background-color: rgb(24,188,156);
+  z-index:-1 !important;
+}
+.padMar{
+  margin-right: 0px !important;
+}
+.mainsearch{
+  margin-left: 250px;
+  height: 40px !important;
+}
+.searchButton{
+margin-right: 150px;
+}
+.portfolio{
+width: 89vw;
+margin-top: -40px;
+margin-left: 200px;
+}
+
+.star-dark{
+  font-size: 10px;
+margin-top:-1px !important;
+border-width: 3px !important;
+opacity:0.4;
+}
+.cust_blogteaser{
+  padding-top: 3px !important;
+  transform: scale(0.8);
+  border-style: solid;
+  border-width: thin;
+  border-color: #808080;
+  border-radius: 5%;
+  padding: 2px !important;
+  max-width:20% !important;
+}
+.cardimg{
+  width: 98.9%;
+  height: 210px !important;
+  border-radius: 5%;
+
+}
+.cardtext{
+  width: 100%;
+
+}
+.carddivider{
+  border-color:#808080 !important;
+  width:90%;
+  border-width: 0.5px;
+
+}
+.gradecontainer{
+  margin-top: -20px;
+}
+.cardcontainer{
+  text-align: center;
+  margin-left: 0% !important;
+  margin-top: -50px !important;
+}

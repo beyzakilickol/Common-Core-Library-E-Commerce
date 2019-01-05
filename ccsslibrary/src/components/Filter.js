@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import axios from 'axios'
 
+import Menu, { SubMenu, Item as MenuItem, Divider } from 'rc-menu';
+
+import 'rc-menu/assets/index.css';
+import axios from 'axios'
+import '../assets/css/filter.css'
 
 
 class Filter extends Component{
@@ -14,17 +18,91 @@ class Filter extends Component{
   }
 
 
+
+
   render(){
 
     return (
 
-     <div>
-    Hey
+          <div className="filter">
+          <div className="filterdropdown">
+          <Menu>
+          <SubMenu title={'Grade 1'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 2'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 3'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 4'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 5'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 6'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 7'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 8'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 9'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 10'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+          <SubMenu title={'Grade 11'}>
+          <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+          <Divider/>
+          <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+          </SubMenu>
+          <Divider/>
+            <SubMenu title={'Grade 12'}>
+            <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
+            <Divider/>
+            <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
+            </SubMenu>
 
-     </div>
 
-
-
+          </Menu>
+       </div>
+      </div>
     )
   }
 }
