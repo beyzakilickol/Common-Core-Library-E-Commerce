@@ -26,7 +26,11 @@ class Filter extends Component{
 
           <div className="filter">
           <div className="filterdropdown">
+
           <Menu>
+          <MenuItem > Search by Grade
+          </MenuItem>
+          <Divider/>
           <SubMenu title={'Grade 1'}>
           <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
 
@@ -95,12 +99,24 @@ class Filter extends Component{
           <Divider/>
             <SubMenu title={'Grade 12'}>
             <SubMenu title={'Math'} ><MenuItem>Standard</MenuItem></SubMenu>
-            
+
             <SubMenu title={'ELA'} ><MenuItem>Standard 2</MenuItem></SubMenu>
             </SubMenu>
 
 
           </Menu>
+       </div>
+       <p className="search-by-price">Search by Price</p>
+       <div className="adjustment">
+       <div className="price-container">
+        <input className="priceLevel" type="checkbox"/><label className="priceLabel">Free</label><br/>
+        <input className="priceLevel" type="checkbox"/><label className="priceLabel">Under $5</label><br/>
+        <input className="priceLevel" type="checkbox"/><label className="priceLabel">$5 - $10</label><br/>
+        <input className="priceLevel" type="checkbox"/><label className="priceLabel">$10 - $20</label><br/>
+        <input className="priceLevel" type="checkbox"/><label className="priceLabel">$20 and up</label>
+       </div>
+       <div id="adjustment2">
+       </div>
        </div>
       </div>
     )
